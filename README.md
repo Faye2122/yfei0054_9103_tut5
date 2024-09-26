@@ -7,7 +7,6 @@ My inspiration comes from Alex Frukta's artwork *Pointillism*, which was feature
 ![An image of Pointillism](readmeImages/Pointilism_1_Moscow.gif)
 Alex Frukta, *Pointilism Moscow*, 2021.
 
-
 ![An image of Pointillism](readmeImages/Kazakhstan_2_Kazakhstan.gif)
 Alex Frukta, *Pointilism Kazakhstan*, 2021. [Link to Inspiration](https://www.behance.net/gallery/118399297/Pointilism)
 
