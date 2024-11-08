@@ -1,15 +1,13 @@
 # yfei0054_9103_tut5
 ## Major Project
 
-# Part 1: How to interact with the work
+## Part 1: How to interact with the work
 
-## 1. Time-Driven Gradient Transitions
+- **1. Time-Driven Gradient Transitions**
 The animation seamlessly transitions between warm and cool images in a loop, simulating the illusion of day-night alternation.
-
-## 2. Dynamic River Motion
+- **2. Dynamic River Motion**
 Particles in the river flow continuously from right to left over time, mimicking the natural movement of water.
-
-## 3. Background Flickering Effect
+- **3. Background Flickering Effect**
 Sky particles alternate between rectangular and circular shapes, creating a flickering transformation in the background.
 
 ### Summary
@@ -23,10 +21,8 @@ Time is the core of the animation logic. The `frameCount` variable drives the co
 
 - **Time-Driven Visual Effects**  
   Unlike my group members, who may use direct controls to manipulate certain elements, my animation is entirely time-driven. The particle colors, motions, and background flickering evolve naturally over time.
-
 - **Gradient Transition Handling**  
   To avoid unnatural color transitions (e.g., pink or green), I introduced a nighttime image as the target color for interpolation. This ensures a smooth and contextually appropriate transition between day and night.
-
 - **River Particle Motion**  
   While all group members worked on river animations, my implementation integrates noise and time-based logic to achieve a unique, non-repetitive, and organic motion.
 
@@ -46,7 +42,7 @@ Roni Kaufman, *Parly 2*, 2024. [Link to Inspiration](https://openprocessing.org/
 
 # Part 4: Technical Explanation of Individual Code
 
-![An image of Screemshot1](Screenshot1.PNG)
+![An image of Screemshot1](Screenshot1.png)
 - **Functionality**:  
   Draws particles using rectangles and ellipses.  
   - **Rectangle**: The dimensions are dynamically adjusted using the `sin` function to simulate a "flickering" effect.  
@@ -55,7 +51,7 @@ Roni Kaufman, *Parly 2*, 2024. [Link to Inspiration](https://openprocessing.org/
 - **Technical Highlight**:  
   - **`frameCount`**: Used to control changes over time.
 
-![An image of Screemshot2](Screenshot2.PNG)
+![An image of Screemshot2](Screenshot2.png)
 - **Functionality**:  
   Adds a "flowing" effect to particles, simulating horizontal movement with wave-like vertical oscillations.
 
@@ -63,7 +59,7 @@ Roni Kaufman, *Parly 2*, 2024. [Link to Inspiration](https://openprocessing.org/
   - **Noise Function**: Introduces randomness, making the particle movement more natural.  
   - **Wave Simulation**: Combines the `sin` function to achieve vertical oscillations along the Y-axis, creating a wave effect.
 
-![An image of Screemshot3](Screenshot3.PNG)
+![An image of Screemshot3](Screenshot3.png)
 - **Functionality**:  
   Updates particle colors, gradually transitioning from the initial color to the target color.
 
