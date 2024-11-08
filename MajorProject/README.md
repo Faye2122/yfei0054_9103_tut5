@@ -1,4 +1,4 @@
-## yfei0054_9103_tut5
+# yfei0054_9103_tut5
 # Major Project
 
 ## Part 1: How to interact with the work
@@ -14,12 +14,10 @@ Sky particles alternate between rectangular and circular shapes, creating a flic
 Time is the core of the animation logic. The `frameCount` variable drives the color transitions between day and night, the direction and speed of river flow, and the rhythm of background flickering. All elements change naturally over time without user intervention.
 
 
-
 ---
 
 
-
-# Chosen Interaction Method**: **Time**
+# Chosen Interaction Method: **Time**
 
 # Part 2: Comparison with Group Members
 
@@ -31,9 +29,7 @@ Time is the core of the animation logic. The `frameCount` variable drives the co
   While all group members worked on river animations, my implementation integrates noise and time-based logic to achieve a unique, non-repetitive, and organic motion.
 
 
-
 ---
-
 
 
 # Part 3: Inspiration
@@ -50,9 +46,7 @@ Roni Kaufman, *Parly 2*, 2024. [Link to Inspiration](https://openprocessing.org/
   The switching between square and circular shapes in this example inspired me to create similar visual transformations for the particles in the sky animation.
 
 
-
 ---
-
 
 
 # Part 4: Technical Explanation of Individual Code
@@ -84,9 +78,7 @@ Roni Kaufman, *Parly 2*, 2024. [Link to Inspiration](https://openprocessing.org/
   - **`lerpColor`**: Smoothly interpolates between two colors, enabling a fluid transition from daytime to nighttime imagery.
 
 
-
 ---
-
 
 
 # Technical References
