@@ -11,7 +11,7 @@ Particles in the river flow continuously from right to left over time, mimicking
 Sky particles alternate between rectangular and circular shapes, creating a flickering transformation in the background.
 
 ### Summary
-Time is the core of the animation logic. The `frameCount` variable drives the color transitions between day and night, the direction and speed of river flow, and the rhythm of background flickering. All elements change naturally over time without user intervention.
+Time is the core of the animation logic. The `frameCount` variable drives the color transitions between day and night, the direction and speed of river flow, and the rhythm of background flickering. All elements change naturally over time without audience intervention.
 
 
 ---
