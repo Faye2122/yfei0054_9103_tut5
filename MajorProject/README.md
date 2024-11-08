@@ -1,5 +1,5 @@
-# yfei0054_9103_tut5
-## Major Project
+## yfei0054_9103_tut5
+# Major Project
 
 ## Part 1: How to interact with the work
 
@@ -13,9 +13,11 @@ Sky particles alternate between rectangular and circular shapes, creating a flic
 ### Summary
 Time is the core of the animation logic. The `frameCount` variable drives the color transitions between day and night, the direction and speed of river flow, and the rhythm of background flickering. All elements change naturally over time without user intervention.
 
+
 ---
 
-**Chosen Interaction Method**: **Time**
+
+# Chosen Interaction Method**: **Time**
 
 # Part 2: Comparison with Group Members
 
@@ -26,7 +28,9 @@ Time is the core of the animation logic. The `frameCount` variable drives the co
 - **River Particle Motion**  
   While all group members worked on river animations, my implementation integrates noise and time-based logic to achieve a unique, non-repetitive, and organic motion.
 
+
 ---
+
 
 # Part 3: Inspiration
 
@@ -35,12 +39,15 @@ Time is the core of the animation logic. The `frameCount` variable drives the co
 Ryan Seal, *Day And Night*, 2018. [Link to Inspiration](https://dribbble.com/shots/4418228-Day-And-Night)
    This animation simulates time-lapse photography, showcasing a transition from day to night. It inspired my work to include a similar visual effect of day-night alternation.
 
+
 ![An image of Parly 2](readmeImages/circle_and_square_transformation.png)
 
 Roni Kaufman, *Parly 2*, 2024. [Link to Inspiration](https://openprocessing.org/sketch/2405194)
   The switching between square and circular shapes in this example inspired me to create similar visual transformations for the particles in the sky animation.
 
+
 ---
+
 
 # Part 4: Technical Explanation of Individual Code
 
@@ -53,6 +60,7 @@ Roni Kaufman, *Parly 2*, 2024. [Link to Inspiration](https://openprocessing.org/
 - **Technical Highlight**:  
   - **`frameCount`**: Used to control changes over time.
 
+
 ![An image of Screemshot2](readmeImages/Screenshot2.PNG)
 - **Functionality**:  
   Adds a "flowing" effect to particles, simulating horizontal movement with wave-like vertical oscillations.
@@ -61,6 +69,7 @@ Roni Kaufman, *Parly 2*, 2024. [Link to Inspiration](https://openprocessing.org/
   - **Noise Function**: Introduces randomness, making the particle movement more natural.  
   - **Wave Simulation**: Combines the `sin` function to achieve vertical oscillations along the Y-axis, creating a wave effect.
 
+
 ![An image of Screemshot3](readmeImages/Screenshot3.PNG)
 - **Functionality**:  
   Updates particle colors, gradually transitioning from the initial color to the target color.
@@ -68,7 +77,9 @@ Roni Kaufman, *Parly 2*, 2024. [Link to Inspiration](https://openprocessing.org/
 - **Technical Highlight**:  
   - **`lerpColor`**: Smoothly interpolates between two colors, enabling a fluid transition from daytime to nighttime imagery.
 
+
 ---
+
 
 # Technical References
 
