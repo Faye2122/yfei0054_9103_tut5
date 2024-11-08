@@ -31,10 +31,12 @@ Time is the core of the animation logic. The `frameCount` variable drives the co
 # Part 3: Inspiration
 
 ![An image of Day and Night](readmeImages/day_and_night_cycle_by_ryan_sael.gif)
+
 Ryan Seal, *Day And Night*, 2018. [Link to Inspiration](https://dribbble.com/shots/4418228-Day-And-Night)
    This animation simulates time-lapse photography, showcasing a transition from day to night. It inspired my work to include a similar visual effect of day-night alternation.
 
 ![An image of Parly 2](readmeImages/circle_and_square_transformation.png)
+
 Roni Kaufman, *Parly 2*, 2024. [Link to Inspiration](https://openprocessing.org/sketch/2405194)
   The switching between square and circular shapes in this example inspired me to create similar visual transformations for the particles in the sky animation.
 
