@@ -19,14 +19,14 @@ Time is the core of the animation logic. The `frameCount` variable drives the co
 
 # Chosen Interaction Method: **Time**
 
-# Part 2: Comparison with Group Members
+# Part 2: Differences with Group Members
 
 - **Time-Driven Visual Effects**  
   Unlike my group members, who may use direct controls to manipulate certain elements, my animation is entirely time-driven. The particle colors, motions, and background flickering evolve naturally over time.
 - **Gradient Transition Handling**  
   To avoid unnatural color transitions (e.g., pink or green), I introduced a nighttime image as the target color for interpolation. This ensures a smooth and contextually appropriate transition between day and night.
 - **River Particle Motion**  
-  While all group members worked on river animations, my implementation integrates noise and time-based logic to achieve a unique, non-repetitive, and organic motion.
+  All our group members worked on lake animations, but my implementation integrates noise and time-based logic to achieve a non-repetitive, and organic motion.
 
 
 ---
@@ -37,13 +37,16 @@ Time is the core of the animation logic. The `frameCount` variable drives the co
 ![An image of Day and Night](readmeImages/day_and_night_cycle_by_ryan_sael.gif)
 
 Ryan Seal, *Day And Night*, 2018. [Link to Inspiration](https://dribbble.com/shots/4418228-Day-And-Night)
-   This animation simulates time-lapse photography, showcasing a transition from day to night. It inspired my work to include a similar visual effect of day-night alternation.
+
+   This animation simulates time-lapse photography, showcasing a transition from day to night.
+    It inspired my work to include a similar visual effect of day-night alternation.
 
 
 ![An image of Parly 2](readmeImages/circle_and_square_transformation.png)
 
 Roni Kaufman, *Parly 2*, 2024. [Link to Inspiration](https://openprocessing.org/sketch/2405194)
-  The switching between square and circular shapes in this example inspired me to create similar visual transformations for the particles in the sky animation.
+
+ The switching between square and circular shapes in this example inspired me to create similar visual transformations for the particles in the sky animation.
 
 
 ---
