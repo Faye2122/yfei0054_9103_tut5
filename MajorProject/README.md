@@ -3,18 +3,20 @@
 
 ## Part 1: How to interact with the work
 
-- **1. Time-Driven Gradient Transitions**
+- **Time-Driven Gradient Transitions**
 The animation seamlessly transitions between warm and cool images in a loop, simulating the illusion of day-night alternation.
-- **2. Dynamic River Motion**
+- **Dynamic River Motion**
 Particles in the river flow continuously from right to left over time, mimicking the natural movement of water.
-- **3. Background Flickering Effect**
+- **Background Flickering Effect**
 Sky particles alternate between rectangular and circular shapes, creating a flickering transformation in the background.
 
 ### Summary
 Time is the core of the animation logic. The `frameCount` variable drives the color transitions between day and night, the direction and speed of river flow, and the rhythm of background flickering. All elements change naturally over time without user intervention.
 
 
+
 ---
+
 
 
 # Chosen Interaction Method**: **Time**
@@ -29,7 +31,9 @@ Time is the core of the animation logic. The `frameCount` variable drives the co
   While all group members worked on river animations, my implementation integrates noise and time-based logic to achieve a unique, non-repetitive, and organic motion.
 
 
+
 ---
+
 
 
 # Part 3: Inspiration
@@ -46,7 +50,9 @@ Roni Kaufman, *Parly 2*, 2024. [Link to Inspiration](https://openprocessing.org/
   The switching between square and circular shapes in this example inspired me to create similar visual transformations for the particles in the sky animation.
 
 
+
 ---
+
 
 
 # Part 4: Technical Explanation of Individual Code
@@ -78,7 +84,9 @@ Roni Kaufman, *Parly 2*, 2024. [Link to Inspiration](https://openprocessing.org/
   - **`lerpColor`**: Smoothly interpolates between two colors, enabling a fluid transition from daytime to nighttime imagery.
 
 
+
 ---
+
 
 
 # Technical References
