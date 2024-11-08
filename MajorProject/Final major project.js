@@ -14,7 +14,7 @@ let bgColor; // background colour
 let c1, c2, c3;//Gradient colors
 let colorRate = 1; //Color interpolation rate
 
-
+//Preload images before setup
 function preload() {
   img1 = loadImage('Assests/sky1.png'); //Original Sky image
   img2 = loadImage('Assests/water1.png'); //Original water image
@@ -26,10 +26,9 @@ function preload() {
 //Set up the canvas and initialize particles
 function setup() {
   createCanvas(windowWidth, windowHeight);
-
   createParticle(); 
-
 }
+
 //Create particles
 function createParticle() {
   particles1 = [];
@@ -141,13 +140,17 @@ class Particle {
     this.h = h;//Particle height
     this.col2=col2;//Particle target color
     this.currentCol=col; //Particle current color
-
+    this.off = random(PI) // Random offset
   }
- //Display particle
+
+ //Display particle as a rectangle and ellipse
   display() {
-    noStroke()
-    fill(this.currentCol)
-    ellipse(this.x, this.y, this.w, this.h)
+   rectMode(CENTER)
+   noStroke()
+   fill(this.currentCol)
+   rect(this.x,this.y,this.w*sin(frameCount*0.1+this.off),this.h*sin(frameCount*0.1+this.off))//Dynamic rectangles
+   ellipse(this.x, this.y, this.w, this.h)//Static ellipses
+
   }
 
   //Display flowing particles 
@@ -162,7 +165,7 @@ class Particle {
     ellipse(this.x, this.y + sin(this.x * .01 + this.y * 0.0 + frameCount * 0.01) * partSize2 * 0.5, this.w, this.h)
     //Add wave-like motion using sine function
   }
-  
+
   //Update particle color
   update() {
     let c1 = color(red(this.col),green(this.col),blue(this.col))
