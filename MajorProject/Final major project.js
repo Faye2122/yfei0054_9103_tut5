@@ -54,7 +54,7 @@ function createParticle() {
       }
     }
   }
-//lake turn to night
+//Lake particles transition to night
   let imgCopy2 = img2.get()
   imgCopy2.resize(width, height)
   let imgCopy5 = img5.get()
@@ -62,15 +62,14 @@ function createParticle() {
   for (let x = 0; x < imgCopy2.width; x += partSize2) {
     for (let y = 0; y < imgCopy2.height; y += partSize2) {
       let c = imgCopy2.get(x, y);
-      let c3 = imgCopy5.get(x, y);
+      let c2 = imgCopy5.get(x, y);
       if (brightness(color(c)) > 0) {
-        particles2.push(new Particle(x, y, c, partSize2 * 2, partSize2 * 0.8,c3))
-        
+        particles2.push(new Particle(x, y, c, partSize2 * 2, partSize2 * 0.8,c2))
       }
     }
   }
 
-  //house turn to night
+  //House particles transition to night
   let imgCopy3 = img3.get()
   imgCopy3.resize(width, height)
   let imgCopy6 = img6.get()
@@ -78,9 +77,9 @@ function createParticle() {
   for (let x = 0; x < imgCopy3.width; x += partSize3) {
     for (let y = 0; y < imgCopy3.height; y += partSize3) {
       let c = imgCopy3.get(x, y);
-      let c4 = imgCopy6.get(x, y);
+      let c3 = imgCopy6.get(x, y);
       if (brightness(color(c)) > 0) {
-        particles3.push(new Particle(x, y, c, partSize3 * 2, partSize3 * 2,c4))
+        particles3.push(new Particle(x, y, c, partSize3 * 2, partSize3 * 2,c3))
       }
     }
   }
@@ -90,18 +89,20 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   createParticle();//Recreate particles
 }
-
+//Drawing loop
 function draw() {
   colorRate = (1+sin(frameCount*0.01-PI/2))/2
   if(frameCount*0.01-PI/2>2*PI){
     colorRate=0;
      console.log(frameCount*0.01-PI/2)
   }
+  //Set gradient background 
   background(0);
-  //Create gradient background
+  
   c1 = color(126, 164, 255) //Top color
   c2 = color(255, 178, 68) //Middle colour
   c3 = color(144, 183, 255) //Bottom colour
+
   for (let y = 0; y < height * 0.5; y += 1) {
     let c = lerpColor(c1, c2, map(y, 0, height * 0.5, 0, 1))
     stroke(c)
@@ -115,7 +116,7 @@ function draw() {
     strokeWeight(1)
     line(0, y, width, y)
   }
-
+//Update and draw particles
   for (let i = 0; i < particles1.length; i++) {
     particles1[i].update()
     particles1[i].display()
@@ -149,14 +150,19 @@ class Particle {
     ellipse(this.x, this.y, this.w, this.h)
   }
 
-  //Display particles with sinusoidal wave
+  //Display flowing particles 
   displayLine() {
+    this.x-=1*noise(this.x,this.y*0.1) //Add random offset to x position
+    if(this.x<0){
+      this.x = width //Reset particle position when it exits left boundary
+    }
     noStroke()
     fill(this.currentCol)
-   
-    ellipse(this.x, this.y + sin(this.x * 0.01 + this.y * 0.0 + frameCount * 0.0) * partSize2 * 0.5, this.w, this.h)
-  
+
+    ellipse(this.x, this.y + sin(this.x * .01 + this.y * 0.0 + frameCount * 0.01) * partSize2 * 0.5, this.w, this.h)
+    //Add wave-like motion using sine function
   }
+  
   //Update particle color
   update() {
     let c1 = color(red(this.col),green(this.col),blue(this.col))
